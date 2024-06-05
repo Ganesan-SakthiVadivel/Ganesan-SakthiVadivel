@@ -1,0 +1,15 @@
+*{
+    scroll-behavior: smooth;
+}
+.footer_design ul{
+    text-decoration: none;
+    list-style: none;
+}
+.footer_design ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.footer_design ul li a {
+    text-decoration: none;
+    color: black;
+}
