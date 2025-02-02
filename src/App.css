@@ -1,0 +1,41 @@
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  color: aliceblue;
+}
+#root {
+  text-align: center;
+}
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Half the height for the top animation */
+  pointer-events: none; /* Ensure the background animation doesn't interfere with user interactions */
+}
+
+/* .background-animation.mirror {
+  top: 0;
+  bottom: 0;
+  transform: scaleY(1); 
+  opacity: 0.5; 
+} */
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind other content */
+  pointer-events: none; /* Prevent interaction with the animation */
+}
+
+.App {
+  position: relative;
+  z-index: 1;
+}
