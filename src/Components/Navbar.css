@@ -1,0 +1,120 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  :after {
+    content: "";
+  }
+  
+  html {
+    scroll-behavior: smooth; /* Smooth scrolling when clicking navbar items */
+  }
+  
+  .sections {
+    position: relative;
+    left: 100px;
+  }
+  
+  h1 {
+    margin: 80px 0 10px 0;
+    font-size: 52px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .containers {
+    color: #c5c6c7;
+    max-width: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 5.4rem;
+    z-index: 100000;
+  }
+  
+  .navs {
+    z-index: 1000;
+    float: left;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    background: transparent;
+  }
+  
+  .navs ul {
+    text-align: center;
+  }
+  
+  .navs ul li {
+    position: relative;
+    width: 70px;
+    cursor: pointer;
+    background: #45a29e;
+    text-transform: uppercase;
+    transition: all 0.4s ease-out;
+  }
+  
+  .navs ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  .navs ul li:after {
+    position: absolute;
+    background: #c5c6c7;
+    color: #45a29e;
+    top: 0;
+    left: 70px;
+    width: 70px;
+    height: 100%;
+    opacity: 0.5;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all 0.4s ease-out;
+  }
+  
+  .navs ul li:nth-child(1):after {
+    content: "Home";
+    line-height: 88px;
+  }
+  
+  .navs ul li:nth-child(2):after {
+    content: "About";
+    line-height: 88px;
+  }
+  
+  .navs ul li:nth-child(3):after {
+    content: "Work";
+    line-height: 85px;
+  }
+  
+  .navs ul li:nth-child(4):after {
+    content: "Say hi";
+    line-height: 70px;
+  }
+  
+  .navs ul li:hover {
+    transform: translateX(-70px);
+  }
+  
+  .navs ul li:hover:after {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg) scale(1);
+  }
+  
+  .navs ul li > div {
+    display: inline-block;
+    padding: 25px 0;
+    background: transparent;
+  }
+  
+  .navs ul li div {
+    position: relative;
+  }
+  
+
+  
+ 

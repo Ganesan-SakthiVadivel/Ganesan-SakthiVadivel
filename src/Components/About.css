@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .Portfolio {
+      padding: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      color: white; /* Ensure text is readable on dark background */
+      position: relative; /* Ensure child elements can use absolute positioning */
+    }
+    
+    .text-content {
+      width: 50%;
+      z-index: 10; /* Ensure text content is above the background animation */
+      text-align: left;
+    }
+    .summary-content{
+      width: 100%;
+    }
+    .animationimg {
+      width: 50%;
+      position: relative;
+      right: 0;
+      max-width: 550px; /* Adjust the maximum width as needed */
+      animation: float 3s ease-in-out infinite; /* Infinite floating effect */
+      filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2)); /* Optional shadow for depth */
+    }
+    .animationimg2 {
+      width: 105%;
+      height: 35vh;
+      border-radius: 49%;
+      position: relative;
+      align-items: center;
+      place-items:center;
+      max-width: 550px; /* Adjust the maximum width as needed */
+      animation: float 6s ease-in-out infinite; /* Infinite floating effect */
+      filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2)); /* Optional shadow for depth */
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0); /* Start at the original position */
+      }
+      50% {
+        transform: translateY(-20px); /* Float up */
+      }
+      100% {
+        transform: translateY(0); /* Return to original position */
+      }
+    }
+    .background-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100vh;
+      z-index: 10; /* Ensure it is below other content */
+      overflow: hidden; /* Hide any overflow */
+    }
+    
+    .background-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh; /* Half the height for the top animation */
+      /* pointer-events: none; Ensure the background animation doesn't interfere with user interactions */
+      backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(0px);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    }
+    /* .glass{
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(40px);
+      border-radius: 20px;
+      border:1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin: 5px;
+  } */
+  .summary{
+    justify-content: space-between;
+      align-items: center;
+      display: flex;
+  }
+  .summary .summary-content abbr{
+    text-decoration: none;
+    color: rgb(255, 255, 75);
+    cursor: help;
+  }
+  
+    
+    h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    
+    h3 {
+      font-size: 2rem;
+      font-weight: light;
+      color: #eee;
+    }
+   
+    /* Responsive styles for screens with max-width of 768px */
+    @media (max-width: 768px) {
+      .Portfolio {
+        flex-direction: column;
+        padding: 50px;
+      }
+    
+      .text-content,
+      .animationimg {
+        width: 100%;
+      }
+    
+      .animationimg {
+        margin-top: 20px;
+      }
+    
+      h2 {
+        font-size: 2rem;
+      }
+    
+      h3 {
+        font-size: 1.5rem;
+      }
+      .background-animation {
+        height: 100vh; /* Ensure it doesn’t exceed viewport */
+        background-size: cover; /* Ensure background covers properly */
+        background-position: center; /* Center the background */
+        position: fixed;
+      }
+    }
+    
