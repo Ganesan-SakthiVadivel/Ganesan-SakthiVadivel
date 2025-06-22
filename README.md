@@ -48,7 +48,8 @@
 
 - ✉️ Email: [ganesan.cloud@gmail.com](mailto:ganesan.cloud@gmail.com)
 - 🔗 LinkedIn: [linkedin.com/in/ganesansakthivadivel](https://www.linkedin.com/in/ganesan-sakthivadivel/)
-- 🧠 Portfolio/Blog: https://gsv-portfolio.netlify.app/
+- 🧠 Portfolio/Blog: https://gsv-portfolio.netlify.app
+- 🧩 instagram : https://www.instagram.com/ganesan.05
 
 ---
 
